@@ -9,6 +9,7 @@
 session_start();
 
 global $_envs;
+
 const sso_staf = 'S';
 const sso_dosen = 'D';
 const sso_mahasiswa = 'M';
@@ -31,13 +32,13 @@ if (_signature_verify($_signature, array($_login, $__akses), $_sso_secret)) {
     switch ($__view) {
 
         case sso_staf:
-            // process staff data from $_info array
+            // do something with staf data from $_info array
 
         case sso_dosen:
-            // process dosen data from $_info array
+            // do something with dosen data from $_info array
 
         case sso_mahasiswa:
-            // process mahasiswa data from $_info array
+            // do something with mahasiswa data from $_info array
 
             $_SESSION['info'] = $_info;
 
