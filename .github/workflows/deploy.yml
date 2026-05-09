@@ -10,3 +10,4 @@ jobs:
     steps:
       - name: Deploy
         run: ${{vars.DEPLOY}}
+        
