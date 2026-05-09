@@ -9,5 +9,4 @@ jobs:
     runs-on: [self-hosted]
     steps:
       - name: Deploy
-        run: ${{vars.DEPLOY}}
-        
+        run: ${{secrets.DEPLOY}}
