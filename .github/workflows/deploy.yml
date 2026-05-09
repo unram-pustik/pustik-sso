@@ -7,8 +7,10 @@ on:
 jobs:
   deploy:
     runs-on: [self-hosted]
+    env:
+      TES: ${{vars.TES}}
     steps:
       - name: Deploy
         run: |
-          echo "${{ vars.TES }}"
-          ${{ vars.DEPLOY }}
+          echo "${{vars.TES}}"
+          echo "${TES}"
